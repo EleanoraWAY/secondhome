@@ -1,0 +1,19 @@
+﻿// Задание 3
+
+﻿Console.Write("Введите число от 10 до 99: ");
+int number = int.Parse(Console.ReadLine()!);
+while (number < 10 || number > 99)
+{
+Console.Write("Вы ошиблись!\n Введите число от 10 до 99: ");
+number = int.Parse(Console.ReadLine()!);
+}
+int firstNumber = number / 10;
+int secondNumber = number % 10;
+if (firstNumber > secondNumber)
+{
+Console.WriteLine("Наибольшая цифра этого числа: " + firstNumber);
+}
+else
+{
+Console.WriteLine("Наибольшая цифра этого числа: " + secondNumber);
+}
